@@ -18,7 +18,7 @@ chart_2 = px.line(df.query("name == 'Brittany'"), x="year", y="Total", title="Br
 chart_2.show()
 #The chart shows the history of the name Brittany, which has gained popular very recently as the chart shows
 #%%
-names = ['Robert', 'John', 'Mary', 'Martha']  # Fixed the missing comma
+names = ['Paul', 'Peter', 'Mary', 'Martha']  # Fixed the missing comma
 filtered_df = df.query("name in @names and year >= 1930")
 chart_3 = px.line(filtered_df, x='year', y='Total', color='name', title='Name Popularity Trends')
 chart_3.show() 
