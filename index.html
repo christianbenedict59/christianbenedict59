@@ -5,138 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Optional: Add Favicon link here -->
-    <!-- <link rel="icon" href="path/to/favicon.png" type="image/png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Optional: Add Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
 </head>
 <body>
-
-    <header class="site-header sticky">
-        <div class="container">
-            <nav class="main-nav">
-                <a href="#hero" class="nav-logo">Your Name</a>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="path/to/your/resume.pdf" target="_blank" class="nav-button">Resume</a></li>
-                </ul>
-                 <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
-            </nav>
-        </div>
+    <header class="site-header">
+        <nav class="container">
+            <div class="logo">Your Name</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section text-center animate-on-scroll">
-            <div class="container">
-                <h1>Designing & Building Elegant Solutions.</h1>
-                <p class="subtitle">Hi, I'm [Your Name], a [Your Role/Title] passionate about creating intuitive and impactful digital experiences.</p>
+        <section id="hero" class="hero-section full-height">
+            <div class="container hero-content animate-on-scroll">
+                <h1>Crafting Digital Experiences</h1>
+                <p class="subtitle">Hi, I'm [Your Name] - A [Your Role, e.g., Software Engineer, Web Developer] passionate about building elegant and powerful solutions.</p>
                 <a href="#projects" class="cta-button">View My Work</a>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section content-section animate-on-scroll">
-            <div class="container narrow-container text-center"> {/* Added text-center here */}
+        <section id="about" class="content-section">
+            <div class="container animate-on-scroll">
                 <h2>About Me</h2>
-                {/* Profile picture removed */}
                 <p>
-                    Write a compelling paragraph or two about yourself here. Focus on your passion, your key skills,
-                    and what drives you. Mention your experience level or key achievements briefly. Keep it concise
-                    and engaging. Think about your "elevator pitch".
+                    [Write a compelling paragraph or two about yourself here. Focus on your passion, your approach to work, what drives you, and what kind of roles or collaborations you are looking for. Keep it concise but impactful. Example: Driven by a passion for technology and clean design, I specialize in creating intuitive and performant web applications. I thrive in collaborative environments and constantly seek to learn and apply new technologies to solve complex problems effectively...]
                 </p>
-                 <p>
-                    You can add another paragraph for more details if needed, perhaps focusing on your approach
-                    to work or specific areas of expertise.
-                 </p>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section content-section animate-on-scroll">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="project-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card animate-on-scroll">
-                        {/* Project image removed */}
-                        <div class="project-card-content">
-                            <h3>Project Title 1</h3>
-                            <p>A brief description of the project, the technologies used (e.g., React, Node.js, CSS Grid), and your role.</p>
-                            <div class="project-links">
-                                <a href="[Link to Live Demo/Site]" target="_blank" class="project-link">Live Demo</a>
-                                <a href="[Link to GitHub Repo]" target="_blank" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Project 2 -->
-                    <article class="project-card animate-on-scroll">
-                         {/* Project image removed */}
-                         <div class="project-card-content">
-                            <h3>Project Title 2</h3>
-                            <p>Describe this project. What problem did it solve? What was challenging or interesting about it?</p>
-                            <div class="project-links">
-                                <a href="[Link to Live Demo/Site]" target="_blank" class="project-link">Live Demo</a>
-                                <a href="[Link to GitHub Repo]" target="_blank" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Project 3 -->
-                    <article class="project-card animate-on-scroll">
-                         {/* Project image removed */}
-                         <div class="project-card-content">
-                            <h3>Project Title 3</h3>
-                            <p>Another project description. Highlight different skills or technologies if possible.</p>
-                            <div class="project-links">
-                                <!-- Add links if available -->
-                                <a href="[Link to GitHub Repo]" target="_blank" class="project-link">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Add more project cards as needed -->
+        <section id="skills" class="content-section alt-bg">
+            <div class="container animate-on-scroll">
+                <h2>Core Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        {/* Optional: <i class="fab fa-html5"></i> */}
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, JavaScript, React, Vue, SASS, Responsive Design</p>
+                    </div>
+                    <div class="skill-item">
+                        {/* Optional: <i class="fas fa-server"></i> */}
+                        <h3>Backend</h3>
+                        <p>Node.js, Python (Django/Flask), Express, REST APIs, Databases (SQL/NoSQL)</p>
+                    </div>
+                    <div class="skill-item">
+                        {/* Optional: <i class="fas fa-tools"></i> */}
+                        <h3>Tools & DevOps</h3>
+                        <p>Git, Docker, CI/CD, AWS/GCP, Testing (Jest/Pytest)</p>
+                    </div>
+                     <div class="skill-item">
+                        {/* Optional: <i class="fas fa-lightbulb"></i> */}
+                        <h3>Design & UX</h3>
+                        <p>Figma (Basic), UI/UX Principles, Prototyping</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-         <!-- Skills Section -->
-        <section id="skills" class="skills-section content-section animate-on-scroll">
-            <div class="container narrow-container">
-                <h2>Core Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML5</li>
-                    <li>CSS3 (Flexbox, Grid)</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>React / Vue / Angular (Choose relevant)</li>
-                    <li>Node.js</li>
-                    <li>Git & GitHub</li>
-                    <li>Responsive Design</li>
-                    <li>UI/UX Principles</li>
-                    <li>[Add More Skills]</li>
-                    <li>[Databases, Testing, Cloud, etc.]</li>
-                </ul>
+        <section id="projects" class="content-section">
+            <div class="container animate-on-scroll">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card animate-on-scroll">
+                        <h3>Project Title One</h3>
+                        <p>A brief description of the project, highlighting the key features, technologies used, and your role. Keep it focused on the impact or the problem solved.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="link-arrow">View Live <span class="arrow">→</span></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="link-arrow">GitHub Repo <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card animate-on-scroll">
+                        <h3>Project Title Two</h3>
+                        <p>Another project description. Emphasize different skills or technologies if possible. Explain the challenge and the solution.</p>
+                         <div class="project-tags">
+                            <span>Python</span><span>Django</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="link-arrow">View Live <span class="arrow">→</span></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="link-arrow">GitHub Repo <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Add more project cards as needed -->
+
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section content-section text-center animate-on-scroll">
-            <div class="container narrow-container">
+        <section id="contact" class="content-section alt-bg">
+            <div class="container animate-on-scroll">
                 <h2>Get In Touch</h2>
                 <p>I'm currently open to new opportunities and collaborations. Feel free to reach out!</p>
-                <a href="mailto:your.email@example.com" class="cta-button">Send Me an Email</a>
-                <div class="social-links">
-                    <a href="[Your LinkedIn URL]" target="_blank" aria-label="LinkedIn">LinkedIn</a> |
-                    <a href="[Your GitHub URL]" target="_blank" aria-label="GitHub">GitHub</a> |
-                    <a href="[Your Twitter URL/Other]" target="_blank" aria-label="Twitter">Twitter</a>
-                    <!-- Add other relevant social/professional links -->
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="cta-button">Email Me</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="cta-button secondary">LinkedIn</a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="cta-button secondary">GitHub</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer-bottom">
         <div class="container">
-            <p>© <span id="current-year"></span> [Your Name]. All rights reserved.</p>
+            <p>© <span id="year"></span> [Your Name]. All rights reserved.</p>
         </div>
     </footer>
 
